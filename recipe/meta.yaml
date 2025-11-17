@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-openai" %}
-{% set version = "1.6.3" %}
+{% set version = "1.6.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_openai-{{ version }}.tar.gz
-  sha256: d2ac6ba08f2d362f3004c668f1584a28db4e2bf73e5c2b9818443188f298a290
+  sha256: 73f5d5bbe5d94f1518efd8d6f353938c65a5f40744ef4e8180837f42c5a26d28
 
 build:
   noarch: python
