@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-openai" %}
-{% set version = "1.6.3" %}
-{% set python_min = "3.10" %}
+{% set version = "1.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_openai-{{ version }}.tar.gz
-  sha256: d2ac6ba08f2d362f3004c668f1584a28db4e2bf73e5c2b9818443188f298a290
+  sha256: 73f5d5bbe5d94f1518efd8d6f353938c65a5f40744ef4e8180837f42c5a26d28
 
 build:
   noarch: python
@@ -39,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-openai for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/openai/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-openai/stable/index.html
   dev_url: https://github.com/apache/airflow/
