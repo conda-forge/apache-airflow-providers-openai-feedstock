@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-openai" %}
-{% set version = "1.6.4" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_openai-{{ version }}.tar.gz
-  sha256: 73f5d5bbe5d94f1518efd8d6f353938c65a5f40744ef4e8180837f42c5a26d28
+  sha256: fb3d3e125954369bb87cbfb4ad48de3678e662fee746111f89565a26827e3cba
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.10.0
+    - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - openai >=1.66.0
 
