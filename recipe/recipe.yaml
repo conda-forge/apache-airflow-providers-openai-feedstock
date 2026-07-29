@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-openai
-  version: "1.8.0"
+  version: "1.8.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_openai-${{ version }}.tar.gz
-  sha256: e01294a906b938127b4e11c9d6ec77a44242fae74ac3e0df354eca874dd2ad0c
+  sha256: 3beb2a09461c3f9088186df8c06eec8a289be3429c3644e86e9ddec9d73e99fc
 
 build:
   noarch: python
@@ -25,8 +25,6 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
     - openai >=2.37.0
-    # start openai[datalib]
-    # end openai[datalib]
 
 tests:
   - python:
