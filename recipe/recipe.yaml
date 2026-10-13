@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-openai
-  version: "2.0.0"
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_openai-${{ version }}.tar.gz
-  sha256: 035f8f09550491688ebd89c6547a8b41416a6019e5322650190d18b9d6ff60d3
+  sha256: eba415a9860ce98d7f0320af715b0b0a7b673a6008f7f10e1cad607590755d86
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.0.2
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
