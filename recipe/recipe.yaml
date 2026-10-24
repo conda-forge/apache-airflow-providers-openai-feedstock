@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-openai
-  version: "2.1.0"
+  version: "2.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_openai-${{ version }}.tar.gz
-  sha256: eba415a9860ce98d7f0320af715b0b0a7b673a6008f7f10e1cad607590755d86
+  sha256: 33502653a269089c7b842db90d058fd148083e7127768a5e4797e3502875c9ae
 
 build:
   noarch: python
